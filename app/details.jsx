@@ -6,8 +6,7 @@ import { Alert, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 const STORAGE_KEY = "mysubscription";
 
 export default function Details() {
-    const params = useLocalSearchParams();
-    const id = params.id;
+    const { id } = useLocalSearchParams();
 
     const [subscription, setSubscription] = useState(null);
 
